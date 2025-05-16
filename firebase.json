@@ -1,0 +1,28 @@
+{
+  "functions": [
+    {
+      "source": "cron",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "runtime": "nodejs22",
+      "secrets": ["PRIVATE_KEY"]
+    }
+  ],
+  "hosting": {
+    "target": "platformhost",
+    "public": "frontend/build",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
