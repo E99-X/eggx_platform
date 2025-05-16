@@ -1,0 +1,56 @@
+# .github/workflows/firebase-deploy.yml
+name: 🚀 Deploy Frontend & Functions to Firebase
+
+on:
+  push:
+    branches: [dev]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🧰 Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 📦 Install root dependencies (including firebase-tools)
+        run: npm ci
+
+      - name: 🔧 Install sub-package deps & build
+        run: |
+          echo "📦 Installing & building frontend…"
+          cd frontend
+          npm ci
+          npm run build
+          cd ..
+
+          echo "📦 Installing cron function deps…"
+          cd cron
+          npm ci
+          cd ..
+
+          echo "✅ Build complete."
+
+      - name: 🚀 Apply target & deploy with token
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          echo "🔗 Applying hosting target alias…"
+          npx firebase target:apply \
+            hosting platformhost eggx-platform \
+            --project eggx-widget-001 \
+            --token "$FIREBASE_TOKEN"
+
+          echo "🚀 Deploying hosting & functions…"
+          npx firebase deploy \
+            --only hosting:platformhost,functions \
+            --project eggx-widget-001 \
+            --token "$FIREBASE_TOKEN" \
+            --json
+
+          echo "✅ Deployment complete."
