@@ -8,8 +8,8 @@ const Mvp = () => {
   return (
     <div className={styles.mvp}>
       <Header
-        title="EggX MVP Overview"
-        desc="Modular, on-chain token sales powered by Move and deployed on the Sui blockchain."
+        title="Egg-X MVP Overview"
+        desc="Modular token sales protocol built on Sui. Live on Testnet."
       />
 
       <section className={styles.section}>
@@ -17,9 +17,9 @@ const Mvp = () => {
         <p className="textContainer">
           EggX is a modular protocol, automation layer, and UI kit for
           composable, on-chain token sales. It powers fully on-chain, flexible
-          token sales with composable features and minimal assumptions. Designed
-          for developers and projects that demand verifiable, decentralized
-          token distribution logic.
+          token sales with composable features and minimal integration effort.
+          Designed for developers and projects that demand verifiable,
+          decentralized token distribution logic.
         </p>
       </section>
 
@@ -32,7 +32,7 @@ const Mvp = () => {
           <List
             variant="check"
             items={[
-              "Written in Move, deployed on Sui",
+              "Encapsulated, composable stage logic",
               "Typed token-bound objects",
               "On-chain logic for all buy/sell validation",
               "Admin permission system",
@@ -42,8 +42,8 @@ const Mvp = () => {
 
         <Card title="Autopilot Package">
           <p className="fourlines">
-            A FaaS-compatible automation module for launching or finalizing sale
-            stages. Trustless backend trigger — no data sharing required.
+            A FaaS automation module for advancing token sale stages. Trustless
+            backend trigger — no user data or credentials required.
           </p>
           <List
             variant="check"
@@ -51,7 +51,7 @@ const Mvp = () => {
               "Enabled/disabled by Sale Admin",
               "Triggered via backend cron job",
               "Condition-based stage management",
-              "Zero user data, zero storage bloat",
+              "Dynamic config, no storage bloat",
             ]}
           />
         </Card>
@@ -59,7 +59,7 @@ const Mvp = () => {
         <Card title="TokenSale Widget">
           <p className="fourlines">
             A no-setup, embeddable React widget for displaying and managing
-            on-chain sales. Fully integrated with the EggX protocol and
+            on-chain sales. Fully integrated with the Egg-X protocol and
             Autopilot.
           </p>
           <List
@@ -84,7 +84,7 @@ const Mvp = () => {
               items={[
                 {
                   label: "Triggered",
-                  sub: "Automatically finalizes when tokens sell out or time expires.",
+                  sub: "Automatically finalizes when time expires.",
                 },
                 {
                   label: "Burn",
@@ -132,7 +132,7 @@ const Mvp = () => {
                 },
                 {
                   label: "Sale Config",
-                  sub: "Lightweight global registry and stage trace metadata",
+                  sub: "Lightweight metadata for global registry and sale history tracking",
                 },
                 {
                   label: "Admin Config",
@@ -165,11 +165,11 @@ const Mvp = () => {
               items={[
                 {
                   label: "Mainnet Rollout",
-                  sub: "Full deployment of EggX Protocol on the Sui mainnet with smart contracts, Autopilot, and TokenSale Widget.",
+                  sub: "Full deployment of Egg-X Protocol on the Sui mainnet with smart contracts, Autopilot, and TokenSale Widget.",
                 },
                 {
-                  label: "EGX Token Utility",
-                  sub: "Protocol fee mechanics integrated with the native EggX token.",
+                  label: "EGGX Token Utility",
+                  sub: "Protocol fee mechanics integrated with the native EGGX token.",
                 },
               ]}
             />
@@ -182,11 +182,11 @@ const Mvp = () => {
               items={[
                 {
                   label: "No-Code Sale Creation",
-                  sub: "One-click dashboard for creating tokens and sales directly on-chain.",
+                  sub: "One-click dashboard for creating tokens and sales on-chain using predefined configs.",
                 },
                 {
                   label: "Widget Constructor",
-                  sub: "Customizable themes, layout options, and brand styling.",
+                  sub: "Customizable themes, layout, branding, and data output configuration.",
                 },
               ]}
             />
@@ -198,8 +198,8 @@ const Mvp = () => {
               variant="bullet"
               items={[
                 {
-                  label: "Flexible Reserve Handling",
-                  sub: "Stage-specific token pool splits supporting private allocations and reserves.",
+                  label: "Flexible Supply Allocation",
+                  sub: "Stage-specific splits of total supply across public, private, and reserve allocations.",
                 },
                 {
                   label: "Access Control & Vesting",

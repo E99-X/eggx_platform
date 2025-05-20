@@ -18,6 +18,7 @@ You can use this directly in your app or static site. See the **"Get your widget
 
 ### Tech Stack
 
+- Sui/Move
 - **React** (Create React App)
 - CSS Modules
 - Stateless playground (no backend)
@@ -131,13 +132,43 @@ This job runs only in the cloud on the defined schedule.
 To deploy:
 
 ```
-firebase deploy --only functions
+gcloud functions deploy <FUNCTION_NAME> \
+  --region=<REGION> \
+  --runtime=nodejs22 \
+  --source=<SOURCE_DIRECTORY> \
+  --entry-point=<ENTRY_FUNCTION> \
+  --trigger-http \
+  --allow-unauthenticated \
+  --set-secrets=<SECRET_NAME>=<SECRET_RESOURCE>:latest \
+  --service-account=<SERVICE_ACCOUNT_EMAIL> \
+  --gen2 \
+  --project=<PROJECT_ID>
 ```
 
 To monitor:
 
 ```
 firebase functions:log
+```
+
+### 🐛 Debug Tool (Optional)
+
+Use this CLI utility to inspect the Autopilot Registry, view linked sales, and check readiness for finalization:
+
+> cron/utils/debug.js
+
+This CLI script connects to the Sui RPC, reads all dynamic fields in the Autopilot Registry, and displays key info such as:
+
+- Sale ID, TokenType, Sale State
+- Current Stage end time
+- AdminCap linkage and type match validation
+- Finalization readiness
+
+To run:
+
+```bash
+cd cron
+node utils/debug.js
 ```
 
 ### ⚠️ Testing
@@ -157,3 +188,11 @@ Testing occurs through:
 ### 💬 Feedback or Questions?
 
 Reach out via [Twitter/X](https://x.com/eggx_) or drop an issue. We're actively building and iterating.
+
+## License
+
+© 2025 EggX. All rights reserved
+
+---
+
+Built for autopilot-powered TokenSales on Sui by the EggX team.
