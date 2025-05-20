@@ -130,7 +130,7 @@ export default function Home() {
   return (
     <div className={styles.demo}>
       <Header
-        title="EggX TokenSale Widget - Now on Autopilot"
+        title="Egg-X TokenSale Widget - Now on Autopilot"
         desc="Try Our Live Testnet Demo: Interact with fully deployed sales - no installation or setup required. Just switch your wallet to Testnet and start buying."
       />
 
