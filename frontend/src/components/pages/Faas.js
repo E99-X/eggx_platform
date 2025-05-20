@@ -9,8 +9,8 @@ const Faas = () => {
   return (
     <div className={styles.mvp}>
       <Header
-        title="EggX turns memecoin chaos into protocol-grade sales"
-        desc="FaaS (Features as a Service) is Egg-X modular product model for on-chain token sales. From protocol logic and automation to SDKs and drop-in UI, each feature is designed to be used independently or combined into complete launch stacks — customizable, composable, and fully on-chain."
+        title="Egg-X turns memecoin chaos into protocol-grade sales"
+        desc="FaaS (Features as a Service) is Egg-X modular product model for on-chain token sales. From protocol logic and automation to SDKs and drop-in UI, each feature is designed to be used independently or combined into complete launch stacks - customizable, composable, and fully on-chain."
       />
 
       <section className={styles.cards}>
