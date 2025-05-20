@@ -10,7 +10,7 @@ const Faas = () => {
     <div className={styles.mvp}>
       <Header
         title="EggX turns memecoin chaos into protocol-grade sales"
-        desc="FaaS (Features as a Service) is EggX's modular architecture for building powerful, on-chain token sale experiences. Each module can be used independently or combined into a complete launch stack — fully customizable and protocol-safe."
+        desc="FaaS (Features as a Service) is Egg-X modular product model for on-chain token sales. From protocol logic and automation to SDKs and drop-in UI, each feature is designed to be used independently or combined into complete launch stacks — customizable, composable, and fully on-chain."
       />
 
       <section className={styles.cards}>
@@ -44,33 +44,32 @@ const Faas = () => {
           />
         </Card>
 
-        <Card title="Autopilot & Scheduler">
+        <Card title="Automation & Triggers">
           <p className="threelines">
-            Automated stage finalization and logic execution based on conditions
-            or time.
+            Automated execution of token sale logic based on conditions, time,
+            or external signals.
           </p>
           <List
             variant="check"
             items={[
-              "Cron-triggered sale advancement",
-              "No backend state required",
-              "Composable with DePIN triggers",
-              "Snapshot-based automation for rewards or vesting flows",
+              "Cron-triggered sale advancement and scheduler",
+              "Composable with DePIN and oracle-based triggers",
+              "Enables auto-swap, distribution, rewards, and vesting flows",
             ]}
           />
         </Card>
 
         <Card title="Token Utilities & Wrappers">
           <p className="threelines">
-            Extend token use cases with fungible, non-fungible, and wrapped
-            asset logic. Integrated post-sale monetization tools.
+            Expand token functionality with NFT/SFT formats and asset wrappers.
+            Unlock new post-sale revenue options.
           </p>
           <List
             variant="check"
             items={[
               "Creator-defined parameters for vesting, access, and stages",
               "Wrap physical or bridged assets into token form",
-              "Enable post-sale resale markets and token redemption",
+              "Enable pre-sale, resale, and token-based payments for products or services",
             ]}
           />
         </Card>
@@ -82,7 +81,7 @@ const Faas = () => {
           <List
             variant="check"
             items={[
-              "Theme packs and presets",
+              "Theme packs, presets, and display customization",
               "Wallet-aware admin detection",
               "Referral links and advanced settings through Dashboard",
             ]}
@@ -164,7 +163,7 @@ const Faas = () => {
       <section className={styles.section}>
         <h2 className="site-text-primary textContainer">Have Feedback?</h2>
         <p className="textContainer">
-          EggX FaaS is built to flex — and it's just getting started. If you’re
+          Egg-X FaaS is built to flex — and it's just getting started. If you’re
           a founder, builder, or degen with ideas, let’s talk. Drop us a line on{" "}
           <a
             href="https://x.com/eggx_"
