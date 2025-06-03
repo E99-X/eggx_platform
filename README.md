@@ -188,6 +188,7 @@ Testing occurs through:
 ## Update
 
 ### Dashboard
+[Dashboard Demo](https://youtu.be/MUY-rDxGpH4)
 
 ### Features
 
