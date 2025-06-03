@@ -1,0 +1,30 @@
+.tokenListContainer {
+  width: 100%;
+  display: block;
+  overflow-x: hidden;
+}
+
+.tokenList {
+  display: flex;
+  flex-direction: row;
+  gap: var(--site-gap-md);
+  padding-bottom: var(--site-gap-md);
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sliderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 var(--site-gap-md);
+}
+
+.sliderHeader img {
+  width: 15px;
+  height: 16px;
+}

@@ -35,13 +35,6 @@
   color: var(--site-bgr-color);
 }
 
-.btnAccent {
-  box-sizing: border-box;
-  background: var(--site-accent-color);
-  color: var(--site-bgr-color);
-  width: 100%;
-}
-
 .btn:hover,
 .btn:focus {
   filter: brightness(1.3);

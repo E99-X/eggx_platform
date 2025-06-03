@@ -185,6 +185,40 @@ Testing occurs through:
 
 ---
 
+## Update
+
+### Dashboard
+
+### Features
+
+- 1-Click Token creation with img uploading on web3.storage
+- 1-Click Sale creation for selected Token
+
+### Test
+
+run
+
+```
+cd backend
+npm run start
+cd../
+
+cd frontend
+npm run dev
+cd ../
+```
+
+### Requirements
+
+`.env` file in `/frontend` dir containing:
+
+```
+VITE_W3_EMAIL=<your_email>
+VITE_DID_KEY=<your_web3.storage_did_key>
+```
+
+![img](https://i.ibb.co/Q78B9kc7/2025-06-03-08-35-10.jpg)
+
 ### 💬 Feedback or Questions?
 
 Reach out via [Twitter/X](https://x.com/eggx_) or drop an issue. We're actively building and iterating.

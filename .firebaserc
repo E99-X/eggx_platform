@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "eggx-widget-001"
+  },
+  "targets": {
+    "hosting": {
+      "platformhost": [
+        "eggx-platform"
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.dashboardForm {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 360px;
+}
+.dashboardForm h4 {
+  text-align: center;
+}
+
+.formBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  border-radius: var(--site-border-radius-lg);
+  background-color: var(--site-bgr-light);
+  padding: var(--site-gap-lg) var(--site-gap-md);
+  min-height: 160px;
+}
+
+.formBlock > input,
+.formBlock > textarea,
+.formBlock > select {
+  margin-bottom: var(--site-gap-sm);
+  min-height: 40px;
+  border: 0;
+}
+
+.formBlock form > button {
+  margin-top: var(--site-gap-sm);
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.uploadLabel {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.placeholderText {
+  color: var(--site-font-dark-color);
+  font-style: italic;
+}
+
+.formBlock + p {
+  height: 40px;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.dashboardForm input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  background-color: var(--site-font-dark-color);
+  border-radius: 4px;
+  cursor: pointer;
+  appearance: none;
+  transition: all 0.2s ease;
+}
+
+.dashboardForm input[type="checkbox"]:checked {
+  background-color: var(--site-accent-color);
+}
+
+.marginTop {
+  margin-top: var(--site-gap-md);
+}

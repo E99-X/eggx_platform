@@ -1,0 +1,26 @@
+.tokenCard {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  background-color: var(--site-bgr-light);
+  border-radius: var(--site-border-radius-lg);
+  padding: var(--site-gap-md);
+  gap: var(--site-gap-md);
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tokenHeader {
+  width: 100%;
+  display: flex;
+  gap: var(--site-gap-sm);
+}
+
+@media (min-width: 768px) {
+  .tokenCard {
+    min-width: 210px;
+    flex: 0 0 calc((100% - 2 * var(--site-gap-md)) / 3);
+  }
+}

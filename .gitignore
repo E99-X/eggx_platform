@@ -35,4 +35,4 @@ coverage/
 
 # Firebase local emulators and functions
 .firebase/
-.firebaserc
+

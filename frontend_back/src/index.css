@@ -1,3 +1,4 @@
+/* src/index.css */
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
 
 .site-root {
@@ -204,8 +205,9 @@ a:hover {
   }
 
   .site-root .site-container {
+    /* restore interior padding */
     max-width: var(--site-container-max-width);
-    margin: 0 auto;
+    margin: 0 auto; /* auto-margins center the container */
   }
 
   .threelines {
@@ -219,7 +221,7 @@ a:hover {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .site-root {
-    --site-font-size-xs: 0.75rem; /* small “caption” text */
+    --site-font-size-xs: 0.75rem; /* really small “caption” text */
     --site-font-size-base: 1rem; /* normal body copy */
     --site-font-size-lg: 1.2rem; /* sub-headings */
     --site-font-size-xl: 1.75rem; /* main headings */

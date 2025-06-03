@@ -1,0 +1,16 @@
+[package]
+name = "user_coin"
+version = "0.0.1"
+edition = "2024.beta"
+
+[dependencies]
+
+eggx_test = { git = "https://github.com/E99-X/eggx_protocol.git", subdir = "eggx_test", rev = "develop" }
+autopilot = { git = "https://github.com/E99-X/eggx_protocol.git", subdir = "autopilot", rev = "develop" }
+
+
+[addresses]
+user_coin = "0x0"
+autopilot = "0x8d5a779f3763fe9c1d8a9e2871e103190cf14a7c503fc80dbf00712e8b54e459"
+eggx_test = "0x023177c42f5ff2f00de27af9132c17143446df41148c4fd132a2f7569b8fffa0"
+
