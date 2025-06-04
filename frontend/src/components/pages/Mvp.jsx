@@ -24,7 +24,7 @@ const Mvp = () => {
       </section>
 
       <section className={styles.cards}>
-        <Card title="EggX Protocol Package">
+        <Card title="Core Protocol & Autopilot">
           <p className="fourlines">
             The core smart contract system that defines token sales as on-chain
             objects. Built for flexibility and safety-first logic.
@@ -34,24 +34,24 @@ const Mvp = () => {
             items={[
               "Encapsulated, composable stage logic",
               "Typed token-bound objects",
-              "On-chain logic for all buy/sell validation",
-              "Admin permission system",
+              "Admin-controlled permissions",
+              "Global autopilot registry",
             ]}
           />
         </Card>
 
-        <Card title="Autopilot Package">
+        <Card title="Dashboard & Playground">
           <p className="fourlines">
-            A FaaS automation module for advancing token sale stages. Trustless
-            backend trigger — no user data or credentials required.
+            Egg-X Platform - from 1-Click token deployment to live sales
+            previews and fully customizable, independently hosted widgets.
           </p>
           <List
             variant="check"
             items={[
-              "Enabled/disabled by Sale Admin",
-              "Triggered via backend cron job",
-              "Condition-based stage management",
-              "Dynamic config, no storage bloat",
+              "Deploy own token contract in 1 click",
+              "Preview all tokens and sales",
+              "Create Token Sale in 1 click",
+              "Customize widget colors, avatar, and get embed script",
             ]}
           />
         </Card>
@@ -181,8 +181,8 @@ const Mvp = () => {
               variant="bullet"
               items={[
                 {
-                  label: "No-Code Sale Creation",
-                  sub: "One-click dashboard for creating tokens and sales on-chain using predefined configs.",
+                  label: "Dashboard Upgrade",
+                  sub: "Image loader, extended features and statistics, real-time analytics & alerts, and AI live assistant.",
                 },
                 {
                   label: "Widget Constructor",
@@ -224,8 +224,9 @@ const Mvp = () => {
             e99x.com
           </a>
           . Use your Sui wallet on Testnet to interact with real, deployed
-          sales. No setup required. To create your own token and launch a
-          TokenSale, follow the instructions in our{" "}
+          sales. No setup required. Use Egg-X dashboard (on desktop) to create
+          your own token and launch a TokenSale, or follow the instructions in
+          our{" "}
           <a
             href="https://github.com/E99-X/user_coin_on_eggx"
             target="_blank"

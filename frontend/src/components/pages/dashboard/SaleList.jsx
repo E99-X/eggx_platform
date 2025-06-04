@@ -10,12 +10,13 @@ export default function SaleList({ refreshSaleList }) {
   const { sales, loading } = useSaleData(refreshSaleList);
 
   if (loading) return <p className={dashboard.empty}>Loading sales...</p>;
-  if (!sales.length) return <p>No sales found for your account.</p>;
+  if (!sales.length)
+    return <p className={dashboard.empty}>No sales found for your account.</p>;
 
   return (
     <div>
       <h3 style={{ textAlign: "center", marginBottom: "var(--site-gap-sm)" }}>
-        Your Tokens
+        Your Token Sales
       </h3>
       <div className={dashboard.saleList}>
         {sales.map((sale) => (

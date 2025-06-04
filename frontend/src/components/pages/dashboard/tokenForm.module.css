@@ -44,7 +44,25 @@
 
 .placeholderText {
   color: var(--site-font-dark-color);
+  font-size: var(--site-font-size-xs);
   font-style: italic;
+}
+
+.preview {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: var(--site-gap-sm);
+  height: 40px;
+  overflow: hidden;
+  padding: 0 var(--site-gap-md);
+}
+
+.preview img {
+  height: 24px;
+  width: auto;
+  border-radius: 4px;
 }
 
 .formBlock + p {
@@ -69,4 +87,23 @@
 
 .marginTop {
   margin-top: var(--site-gap-md);
+}
+
+.hintLink {
+  text-decoration: none;
+  color: var(--site-primary-color);
+  transition: color var(--transition-speed);
+}
+
+.hintLink:hover {
+  color: var(--site-accent-color);
+  transition: color var(--transition-speed);
+}
+
+.error {
+  display: flex;
+
+  justify-content: center;
+  color: var(--site-primary-color);
+  font-size: var(--site-font-size-xs);
 }

@@ -128,7 +128,7 @@ export default function SaleForm({
           required
           className={rowStyeles.input}
         />
-        {price.error && <div>{price.error}</div>}
+        {price.error && <div className={styles.error}>{price.error}</div>}
 
         <label htmlFor="hard-cap">
           <code>Hard cap</code>
@@ -150,7 +150,7 @@ export default function SaleForm({
           required
           className={rowStyeles.input}
         />
-        {hardCap.error && <div>{hardCap.error}</div>}
+        {hardCap.error && <div lassName={styles.error}>{hardCap.error}</div>}
 
         <label htmlFor="reserve-percentage">
           <code>Reserve percentage</code>
@@ -171,7 +171,9 @@ export default function SaleForm({
           }}
           className={rowStyeles.input}
         />
-        {reservePercentage.error && <div>{reservePercentage.error}</div>}
+        {reservePercentage.error && (
+          <div className={styles.error}>{reservePercentage.error}</div>
+        )}
 
         <label htmlFor="number-stage">
           <code>Number of stages</code>
@@ -192,7 +194,9 @@ export default function SaleForm({
           }}
           className={rowStyeles.input}
         />
-        {numberOfStages.error && <div>{numberOfStages.error}</div>}
+        {numberOfStages.error && (
+          <div lassName={styles.error}>{numberOfStages.error}</div>
+        )}
 
         <label htmlFor="duration">
           <code>Stage duration</code>
@@ -213,7 +217,9 @@ export default function SaleForm({
           }}
           className={rowStyeles.input}
         />
-        {stageDuration.error && <div>{stageDuration.error}</div>}
+        {stageDuration.error && (
+          <div lassName={styles.error}>{stageDuration.error}</div>
+        )}
 
         <label>
           <code>Pricing Mode</code>
@@ -260,7 +266,9 @@ export default function SaleForm({
               required
               className={rowStyeles.input}
             />
-            {increment.error && <div>{increment.error}</div>}
+            {increment.error && (
+              <div lassName={styles.error}>{increment.error}</div>
+            )}
           </>
         )}
 

@@ -20,7 +20,12 @@ const Navbar = () => {
         <NavItem to="/" label="Demo" onClick={closeMenu} />
         <NavItem to="/mvp" label="MVP" onClick={closeMenu} />
         <NavItem to="/faas" label="FaaS" onClick={closeMenu} />
-        <NavItem to="/dashboard" label="Dashboard" onClick={closeMenu} />
+        <NavItem
+          to="/dashboard"
+          label="Dashboard"
+          onClick={closeMenu}
+          className="hideDashboard"
+        />
       </div>
       <Hamburger
         onClick={() => {

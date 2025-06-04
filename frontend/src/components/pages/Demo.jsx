@@ -5,7 +5,7 @@ import InputRow from "./InputRow";
 import { SALES } from "../../constants/sales";
 import styles from "./demo.module.css";
 
-const WIDGET_SRC = "https://widget.e99x.com/widget.js";
+const WIDGET_SRC = "http://localhost:3001/widget.js";
 
 let widgetScriptLoading = false;
 function loadWidgetScript(onLoad) {

@@ -6,7 +6,7 @@ import {
 import { Transaction } from "@mysten/sui/transactions";
 
 export const useCreateToken = () => {
-  const account = useCurrentAccount(); // ✅ use it here
+  const account = useCurrentAccount();
   const [isProcessing, setIsProcessing] = useState(false);
   const [deployResult, setDeployResult] = useState(null);
 
@@ -22,7 +22,7 @@ export const useCreateToken = () => {
     setIsProcessing(true);
     setDeployResult(null);
 
-    const res = await fetch("http://localhost:3001/create-token", {
+    const res = await fetch("http://localhost:3002/create-token", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -58,7 +58,7 @@ export const useCreateToken = () => {
       ? `${packageId}::${symbol.toLowerCase()}::${symbol.toUpperCase()}`
       : null;
 
-    await fetch("http://localhost:3001/cleanup-token-dir", {
+    await fetch("http://localhost:3002/cleanup-token-dir", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ address: account.address, symbol }),

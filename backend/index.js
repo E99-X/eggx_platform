@@ -8,7 +8,7 @@ const fs = require("fs");
 const yaml = require("js-yaml");
 
 const app = express();
-const PORT = 3001;
+const PORT = 3002;
 
 app.use(cors());
 app.use(bodyParser.json());

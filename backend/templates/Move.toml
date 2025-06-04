@@ -5,12 +5,12 @@ edition = "2024.beta"
 
 [dependencies]
 
-eggx_test = { git = "https://github.com/E99-X/eggx_protocol.git", subdir = "eggx_test", rev = "develop" }
-autopilot = { git = "https://github.com/E99-X/eggx_protocol.git", subdir = "autopilot", rev = "develop" }
+eggx_test = { git = "https://github.com/E99-X/eggx_protocol.git", subdir = "eggx_test", rev = "registry" }
+autopilot = { git = "https://github.com/E99-X/eggx_protocol.git", subdir = "autopilot", rev = "registry" }
 
 
 [addresses]
 user_coin = "0x0"
-autopilot = "0x8d5a779f3763fe9c1d8a9e2871e103190cf14a7c503fc80dbf00712e8b54e459"
-eggx_test = "0x023177c42f5ff2f00de27af9132c17143446df41148c4fd132a2f7569b8fffa0"
+autopilot = "0xdcb76574b0e521b3b708c4cedc509c9050cd72f67c9bce2b782b9b382619a960"
+eggx_test = "0x9543dbf51ccaed19e157ab402f9761aa5264018cda26a22c1e30c61208872c10"
 

@@ -77,6 +77,10 @@
   transform: translateY(0);
 }
 
+.hideDashboard {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .menu {
     display: flex;
@@ -109,5 +113,9 @@
   .menu a:hover {
     background-color: var(--site-accent-color);
     color: var(--site-bgr-color);
+  }
+
+  .hideDashboard {
+    display: flex;
   }
 }

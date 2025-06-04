@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Transaction } from "@mysten/sui/transactions";
 import { useSignAndExecuteTransaction } from "@mysten/dapp-kit";
-import { PACKAGE_ID } from "../constants/constants";
+import { PACKAGE_ID, SALEBOOK } from "../constants/constants";
 
 export function useCreateTokenSale() {
   const { mutateAsync: signAndExecuteTransaction } =
@@ -38,6 +38,7 @@ export function useCreateTokenSale() {
         tx.pure.u8(selectedPriceMode),
         tx.pure.u64(priceParam),
         tx.pure.u8(finalMode),
+        tx.object(SALEBOOK),
         tx.object(treasuryCapId),
       ],
       typeArguments: [tokenType],
@@ -50,6 +51,10 @@ export function useCreateTokenSale() {
         showObjectChanges: true,
       },
     });
+
+    console.log("Transaction digest:", response?.digest);
+    console.log("Transaction effects:", response.effects);
+    console.log("Object changes:", response.objectChanges);
 
     const digest = response?.digest;
     const sharedSaleObj = response?.objectChanges?.find(
