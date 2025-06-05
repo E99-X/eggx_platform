@@ -12,8 +12,8 @@ module user_coin::{{tokenLower}} {
         let treasury_cap = create_token<{{tokenUpper}}>(
             witness,
             9,
+            b"{{tokenUpper}}",
             b"{{name}}",
-            b"{{symbol}}",
             b"{{description}}",
             icon_url,
             ctx,
