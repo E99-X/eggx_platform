@@ -198,27 +198,33 @@ Testing occurs through:
 ### Test
 
 run in `dashboard` branch
-
+```
+git checkout dashboard
+```
 ```
 cd backend
+npm install
 npm run start
 cd../
 
 cd frontend
+npm install
 npm run dev
-cd ../
 ```
-
-### Requirements
-
-`.env` file in `/frontend` dir containing:
-
+To test the Widget locally via the Egg-X Platform:
 ```
-VITE_W3_EMAIL=<your_email>
-VITE_DID_KEY=<your_web3.storage_did_key>
+git clone https://github.com/E99-X/widget.git
+git checkout registry
+npm install
+npm run build
+npm run serve
 ```
+on eggx_platform repo: make sure your Demo.jsx component `https://github.com/E99-X/eggx_platform/blob/dashboard/frontend/src/components/pages/Demo.jsx` uses your localhost (aka const `WIDGET_SRC = "http://localhost:3001/widget.js";`)
+Leave `<script src="https://widget.e99x.com/widget.js"></script>` in the script snippet to preview your widget on external SandBoxes. 
+*Note* Deployed version uses the previous version of the Protocol (some features can work with issues).
+*Note* Dashboard and Widget version (tree/registry) both use Updated Protocol Deployed from `https://github.com/E99-X/eggx_protocol/tree/registry`
 
-![Dashboar](https://i.ibb.co/Q78B9kc7/2025-06-03-08-35-10.jpg)
+![Dashboar](https://bafybeifv3u2bqe4xka3zkoip2xvwvnp65zmglzh4bbt62tcfzx6xj7vxfu.ipfs.w3s.link/photo_2025-06-05%2012.54.38.jpeg)
 
 ---
 
